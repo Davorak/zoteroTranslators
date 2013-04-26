@@ -19,8 +19,7 @@ function doExport() {
         // This out puts the zotero://select uri that serves as a unique
         // identifier for zotero items.  I think the item.key is supposed to
         // work accros computers now adays.
-		Zotero.write("<a href='zotero://select/items/");
 		var library_id = item.LibraryID ? item.LibraryID : 0;
-		Zotero.write(library_id+"_"+item.key+"'>");
+		Zotero.write("<a href='zotero://select/items/"+library_id+"_"+item.key+"'>");
 	}
 }
